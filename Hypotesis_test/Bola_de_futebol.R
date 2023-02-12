@@ -166,9 +166,12 @@ summary(dados$Novo)
 
 skewness(dados$Atual)
 summary(dados$Atual)
+# nota-se que a média é maior que a mediana
+
 
 skewness(dados$Novo)
 summary(dados$Novo)
+
 
 # Curtose
 
@@ -250,6 +253,7 @@ cor(dados$Atual, dados$Novo)
 # duas populações sejam independentes. Esse é um teste de amostras independentes. Por isso paired = F. 
 
 ?t.test
+#alternative = t indica teste bi caudal
 teste_hipo <- t.test(dados$Atual, dados$Novo, paired = F, conf.level = 0.95, alternative = "t") 
 teste_hipo
 
@@ -298,6 +302,5 @@ power_teste
 tamanho_amostra <- pwr.t.test(power = .95, d = 0.5, type = "t", alternative = "t", sig.level = .05)
 tamanho_amostra
 
-# A Conclusão da Análise e Recomendações ao Cliente você encontra no manual 
-# em pdf no próximo item de aprendizagem.
-
+# a conclusão é de que não existe diferença significativa entre as bolas com tipos de revestimentos diferentes.
+#o ideal seria ter 105 amostras (o dobro do que foi utilizado neste estudo)
