@@ -302,5 +302,7 @@ power_teste
 tamanho_amostra <- pwr.t.test(power = .95, d = 0.5, type = "t", alternative = "t", sig.level = .05)
 tamanho_amostra
 
-# a conclusão é de que não existe diferença significativa entre as bolas com tipos de revestimentos diferentes.
-#o ideal seria ter 105 amostras (o dobro do que foi utilizado neste estudo)
+# a conclusão
+# O valor p é 0,188 , por isso falhamos em rejeitar a hipótese nula,
+# significando que não existe diferença significativa entre as distancias percorridas das bolas com tipos de revestimentos atual e novo.
+# a empresa não deveria continuar com o lançamento do produto devido a baixa diferença de performance do novo revestimento.
